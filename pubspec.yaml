@@ -3,20 +3,21 @@ version: 0.5.0
 
 description:
   Provides a client to connect to NetworkManager - the service that manages network connections on Linux.
-
+publish_to: none
 homepage: https://github.com/canonical/nm.dart
 
 environment:
-  sdk: '>=2.12.0 <3.0.0'
+  sdk: '>=3.12.0 <4.0.0'
 
 platforms:
   linux:
 
 dependencies:
-  dbus: ^0.7.0
+  dbus:
+    git: https://github.com/kumsumit/dbus.dart.git
 
 dev_dependencies:
-  lints: ^2.0.0
-  test: ^1.16.8
+  lints: ^6.1.0
+  test: ^1.31.1
   test_cov: ^1.0.1
 
